@@ -6,57 +6,25 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import "./header.css";
-import { PrimeIcons } from "primereact/api";
+import { AdminItems } from "./AdminItems";
+// import { ManagerItems } from "./ManagerItems";
+// import { EmployeeItems } from "./EmployeeItems";
 
 const Header = () => {
-  const items: MenuItem[] = [
-    {
-      label: "Dashboard",
-    },
-    {
-      label: "Staff",
-      items: [
-        {
-          label: "Add Staff",
-          icon: PrimeIcons.USER_PLUS,
-        },
-        {
-          label: "All Stuff",
-          icon: PrimeIcons.USERS,
-        },
-      ],
-    },
-    {
-      label: "Add New",
-      items: [
-        {
-          label: "New Project",
-          icon: PrimeIcons.PLUS,
-        },
-        {
-          label: "New Category",
-          icon: PrimeIcons.PLUS,
-        },
-      ],
-    },
-    {
-      label: "Projects",
-    },
-    {
-      label: "Tasks",
-      items: [
-        {
-          label: "Add Task",
-          icon: PrimeIcons.PLUS,
-        },
-        {
-          label: "All Tasks",
-          icon: PrimeIcons.LIST,
-        },
-      ],
-    },
-  ];
+  const role = "admin";
+  let menuItems: MenuItem[] = [];
 
+  //switch use korte hobe
+  if (role == "admin") {
+    menuItems = [...AdminItems];
+  }
+  // if (role == "manager") {
+  //   menuItems = [...ManagerItems];
+  // }
+  // if (role == "employee") {
+  //   menuItems = [...EmployeeItems];
+  // }
+  const items: MenuItem[] = menuItems;
   return (
     <div>
       <div className="block md:hidden">
