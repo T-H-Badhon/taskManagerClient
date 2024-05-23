@@ -3,8 +3,6 @@ import Category from "../pages/category/Category";
 import AdminDashboard from "../pages/dashboard/AdminDashboard";
 import AddProject from "../pages/projects/AddProject";
 import Projects from "../pages/projects/Projects";
-import AddStaff from "../pages/staff/AddStaff";
-import AllStaff from "../pages/staff/AllStaff";
 import AddTask from "../pages/task/AddTask";
 import AllTasks from "../pages/task/AllTasks";
 
@@ -14,14 +12,6 @@ export const adminRoutes = {
     {
       path: "dashboard",
       element: <AdminDashboard></AdminDashboard>,
-    },
-    {
-      path: "create-staff",
-      element: <AddStaff></AddStaff>,
-    },
-    {
-      path: "staff",
-      element: <AllStaff></AllStaff>,
     },
     {
       path: "create-project",

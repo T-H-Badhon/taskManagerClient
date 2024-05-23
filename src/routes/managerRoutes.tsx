@@ -3,8 +3,6 @@ import Category from "../pages/category/Category";
 import ManagerDashboard from "../pages/dashboard/ManagerDashboard";
 import AddProject from "../pages/projects/AddProject";
 import Projects from "../pages/projects/Projects";
-import AddStaff from "../pages/staff/AddStaff";
-import AllStaff from "../pages/staff/AllStaff";
 import AddTask from "../pages/task/AddTask";
 import AllTasks from "../pages/task/AllTasks";
 
@@ -14,14 +12,6 @@ export const managerRoutes = {
     {
       path: "dashboard",
       element: <ManagerDashboard></ManagerDashboard>,
-    },
-    {
-      path: "create-staff",
-      element: <AddStaff></AddStaff>,
-    },
-    {
-      path: "staff",
-      element: <AllStaff></AllStaff>,
     },
     {
       path: "create-project",

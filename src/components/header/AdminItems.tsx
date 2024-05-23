@@ -20,23 +20,6 @@ export const AdminItems: MenuItem[] = [
     template: itemLink,
   },
   {
-    label: "Staff",
-    items: [
-      {
-        label: "Add Staff",
-        icon: PrimeIcons.USER_PLUS,
-        url: "admin/create-staff",
-        template: itemLink,
-      },
-      {
-        label: "All Stuff",
-        icon: PrimeIcons.USERS,
-        url: "admin/staff",
-        template: itemLink,
-      },
-    ],
-  },
-  {
     label: "Add New",
     items: [
       {
